@@ -1,0 +1,46 @@
+{{<layout}}
+
+{{$pageTitle}}
+Government land and property
+{{/pageTitle}}
+
+{{$content}}
+
+<main id="content" role="main">
+
+	{{>includes/breadcrumbs}}
+
+	<h1 class="heading-xlarge">
+		Government properties
+	</h1>
+
+
+	<div class="grid-row">
+		<div class="column-third">
+
+		{{>includes/filter-form-2}}
+
+		</div>
+
+
+		<div class="column-two-thirds">
+
+			<ul class="results-header">
+				<li class="map-view"><a href="property-results-map-2" class="selected">Map view</a></li>
+				<li class="list-view"><a href="property-results-2">List view</a></li>
+				<li class="results-found">10 properties found near this location</li>
+			</ul>
+
+			<div class="map" id="map-view">
+				<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="100%" height="600" src="https://maps.google.com/maps?hl=en&q=AL1 5QT&ie=UTF8&t=roadmap&z=15&iwloc=B&output=embed"></iframe>
+			</div>
+
+		</div>
+
+	</div>
+
+</main>
+
+{{/content}}
+
+{{/layout}}

@@ -1,0 +1,54 @@
+{{<layout}}
+
+{{$pageTitle}}
+Government land and property
+{{/pageTitle}}
+
+{{$content}}
+
+<main id="content" role="main">
+
+	{{>includes/breadcrumbs}}
+
+	<h1 class="heading-xlarge">
+		Government properties
+	</h1>
+
+
+	<div class="form-group search-box">
+		<label class="form-label-bold" for="search">Showing properties near</label>
+		<input class="form-control form-control-2-3 font-xsmall" id="search" type="text" value="SW1H"><input class="search-button" type="submit">
+	</div>
+
+	<p>&nbsp;</p>
+
+
+	<div class="grid-row">
+		<div class="column-third">
+
+		{{>includes/filter-form}}
+
+		</div>
+
+
+		<div class="column-two-thirds">
+
+			<ul class="results-header">
+				<li class="map-view"><a href="property-results-map" class="selected">Map view</a></li>
+				<li class="list-view"><a href="property-results">List view</a></li>
+				<li class="results-found">10 properties found near this location</li>
+			</ul>
+
+			<div class="map" id="map-view">
+				<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="100%" height="600" src="https://maps.google.com/maps?hl=en&q=AL1 5QT&ie=UTF8&t=roadmap&z=15&iwloc=B&output=embed"></iframe>
+			</div>
+
+		</div>
+
+	</div>
+
+</main>
+
+{{/content}}
+
+{{/layout}}
